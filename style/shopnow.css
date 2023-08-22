@@ -1,0 +1,424 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:orange;
+
+}
+.contanier{
+    background: #efeeee;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: "logo menu search";
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+.contanier img{
+    grid-area: logo;
+    width:70px ;
+    height: 50px;
+    margin-left: 40%;
+
+}
+ul{
+    grid-area: menu;
+    list-style: none;
+    justify-self: center;
+    margin-top: -30px;
+    margin-left: -20%;
+}
+ul li{
+    display: inline-block;
+    margin: 0 17px;
+    padding-top: 25px;  
+  
+}
+ul li a{
+    text-decoration: none;
+    font-size: 17px; 
+     color: grey;
+}
+ul li a:hover{
+    color: grey;
+}
+nav a{
+    justify-self: center;
+} 
+#open-menu,label{
+    display:none;
+}
+.serach-div{
+      grid-area: search;
+}
+.form-control{
+    height: 30px;
+    margin-left: 20px;
+  
+}
+.btn{
+    height:25px;
+    margin-left: 10px;
+    width: 70px;
+}
+.container-div{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    'slider product';
+    margin-top: 50px;
+}
+.slider{
+    grid-area: slider;
+}
+Select{
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+.dropbtn {
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color:white;
+    margin-left: 50px;
+    margin-top: 30px;
+  }
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 25px;
+  }
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.products{
+     grid-area: product;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas:
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv '
+    'firstDiv secondDiv thirdDiv ';
+    margin-top:40px;
+}
+.firstItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+
+}
+.secondItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+}
+.thirdItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+}
+.thirdItems #text {
+    padding-left: 20px;
+}
+.fourthItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 600px;
+}
+.fifthItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 30px;
+    margin-top: 600px;
+}
+.sixthItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 600px;
+}
+.seventhItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 1200px;
+}
+.eighthItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-top: 1200px;
+    margin-left: 30px;
+}
+.ninthItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 1200px;
+}
+.tenthItems{
+    grid-area: firstDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 50px;
+    margin-top: 1800px;
+}
+.eleventhItems{
+    grid-area: secondDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-top: 1800px;
+    margin-left: 30px;
+}
+.twelvethItems{
+    grid-area: thirdDiv;
+    background-color: #f5f5f5;
+    width: 250px;
+    height: 250px;
+    margin-left: 10px;
+    margin-top: 1800px;
+}
+.products img{
+    width: 200px;
+    height: 200px;
+    padding: 25px;
+}
+.productName{
+	font-size: 20px;
+   margin-left: 40%;
+    margin-top: 40px;
+}
+#text{
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+.products h5{
+font-size: 20px;
+    text-align: center;
+    margin-top: 30px;
+    display: inline-block;
+    margin-left: 100px;
+}
+.products button{
+    margin-left: 10px;
+    width: 50px;
+}
+.products button:hover{
+    background-color: red;
+    border: none;
+    height:20px ;
+    color: white;
+}
+footer{   
+    height: 150px;
+    background-color: #464444;
+    color: whitesmoke;
+    margin-top: 220px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 
+    "location connect contact";
+    text-align: center;
+    padding-top: 50px;
+}
+.location-div{
+    grid-area: location;
+}
+.fa{
+    padding-top: 20px;
+    color: #717171;
+}
+.connect-div{
+    grid-area: connect;
+}
+
+.contact-div{
+    grid-area: contact;
+}
+.Con-icon{
+    margin-left: -15px;
+}
+ .Con-icon i { 
+    margin-left: 20px;
+}
+.contact-div i{
+    display: block;
+    padding-left:20px;
+}
+.line-footer{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(218, 213, 213) ;
+    position:absolute;
+    margin-top: -25px;
+}
+.copyright-div{
+    background-color: #464444;
+    text-align: center;
+    margin-top: -10px;
+    color: whitesmoke;
+}
+@media screen and (max-width: 812px){
+    .contanier{
+        grid-template-columns: 20% 60% 20%;
+        grid-template-rows: 90px  1fr;
+        grid-template-areas: 
+        "logo search hamburger"
+        "menu menu menu ";
+        height: auto;
+        margin-bottom: 30px;
+    }
+    label{
+        display: block;
+        font-size: 30px;
+        margin-left: 50%;
+    }
+    ul{
+        display: none;
+    }
+    #open-menu:checked +ul{
+        width: 100%;
+        grid-area: menu;
+        justify-content: center;
+        align-items: center;
+        height: calc(100vh - 90px);
+        display: flex;
+        flex-direction: column;
+        margin-left: 3%;
+    
+    }
+  .serach-div{
+       margin-top: 5px;
+       grid-area: search;
+       margin-left: 15px;
+    }  
+    #open-menu:checked + ul li{
+        display: block;
+        font-size: 30px;
+        margin: 15px 0;
+        
+
+    }
+    .contanier img{
+        grid-area: logo;
+    }
+    .products{ 
+    display: flex;
+    flex-direction: column;
+   }
+    
+    .firstItems{
+        margin-top: 120px;
+        margin-left: 4%;
+
+    }
+    .secondItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .thirdItems{
+        margin-top: 170px;
+        
+    }
+
+    .fourthItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .fifthItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .sixthItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .seventhItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .eighthItems{
+    margin-top: 170px;
+    margin-left: 4%;
+    }
+    .ninthItems{
+        margin-top: 170px; 
+        margin-left: 4%;   
+    }
+    .tenthItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .eleventhItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    .twelvethItems{
+        margin-top: 170px;
+        margin-left: 4%;
+    }
+    footer{
+    
+        height: 550px;
+        background-color: #464444;
+        color: whitesmoke;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "location"
+        " connect"
+        " contact";
+        text-align: center;
+    }
+
+}   
